@@ -8,10 +8,10 @@ contract CreditCardList {
   struct CreditCard {
     uint id;
     string ownerName;
-    CreaditCardData cardData;
+    CreditCardData cardData;
   }
 
-  struct CreaditCardData {
+  struct CreditCardData {
     string number;
     string ownerName;
     uint validationCode;
@@ -22,7 +22,16 @@ contract CreditCardList {
 
   mapping(uint => CreditCard) public creditCards;
 
-  function createCreditCard() public {
+  constructor() public {
+    CreditCardData memory defaultData = CreditCardData(
+      "6660 0000 0000 6660", "the creator", 666, 6660, "06/07", false
+    );
+
+    createCreditCard("the creator", defaultData);
+  }
+
+  function createCreditCard(string memory _ownerName, CreditCardData memory _cardData) public {
     creditCardCount++;
+    creditCards[creditCardCount] = CreditCard(creditCardCount, _ownerName, _cardData);
   }
 }

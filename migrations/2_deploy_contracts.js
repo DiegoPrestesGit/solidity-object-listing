@@ -1,5 +1,5 @@
-const ObjectList = artifacts.require("ObjectList");
+const CreditCardList = artifacts.require("CreditCardList");
 
 module.exports = function (deployer) {
-  deployer.deploy(ObjectList);
+  deployer.deploy(CreditCardList);
 };
