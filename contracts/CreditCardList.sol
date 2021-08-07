@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
-// pragma experimental ABIEncoderV2;
+pragma experimental ABIEncoderV2;
 
 contract CreditCardList {
   uint public creditCardCount = 0;
@@ -20,7 +20,7 @@ contract CreditCardList {
     bool blocked;
   }
 
-  mapping(uint => CreditCard) creditCards;
+  mapping(uint => CreditCard) public creditCards;
 
   function createCreditCard() public {
     creditCardCount++;
