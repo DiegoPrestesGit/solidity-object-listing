@@ -49,7 +49,7 @@ App = {
 
   loadContract: async () => {
     // Create a JavaScript version of the smart contract
-    const todoList = await $.getJSON('TodoList.json')
+    const todoList = await $.getJSON('CreditCardList.json')
     App.contracts.TodoList = TruffleContract(todoList)
     App.contracts.TodoList.setProvider(App.web3Provider)
 
@@ -78,13 +78,13 @@ App = {
 
   renderTasks: async () => {
     // Load the total task count from the blockchain
-    const taskCount = await App.todoList.taskCount()
+    const taskCount = await App.todoList.creditCardCount()
     const $taskTemplate = $('.taskTemplate')
 
     // Render out each task with a new task template
     for (var i = 1; i <= taskCount; i++) {
       // Fetch the task data from the blockchain
-      const task = await App.todoList.tasks(i)
+      const task = await App.todoList.creditCards(i)
       const taskId = task[0].toNumber()
       const taskContent = task[1]
       const taskCompleted = task[2]
@@ -93,9 +93,9 @@ App = {
       const $newTaskTemplate = $taskTemplate.clone()
       $newTaskTemplate.find('.content').html(taskContent)
       $newTaskTemplate.find('input')
-        .prop('name', taskId)
-        .prop('checked', taskCompleted)
-        .on('click', App.toggleCompleted)
+                      .prop('name', taskId)
+                      .prop('checked', taskCompleted)
+                      .on('click', App.toggleCompleted)
 
       // Put the task in the correct list
       if (taskCompleted) {
