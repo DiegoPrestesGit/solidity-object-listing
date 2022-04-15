@@ -139,8 +139,8 @@ img {
 @media screen and (max-width: 968px) {
   .nav__menu {
     position: fixed;
-    bottom: var(--header-height);
-    /* bottom: -100%; */
+    /* bottom: var(--header-height); */
+    bottom: -100%;
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
@@ -148,7 +148,7 @@ img {
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
-    transition: .3;
+    transition: .4s;
   }
 }
 
@@ -191,7 +191,9 @@ img {
 }
 
 /* Show menu */
-
+.show-menu {
+  bottom: var(--header-height);
+}
 
 /* Active menu link */
 
