@@ -11,7 +11,7 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 * CERTIFICATE
 
 certificate__title
-Certified for what I'm good at
+Certified for what I'm good at what I do.
 
 Certificate of attendance on computer technology.
 
