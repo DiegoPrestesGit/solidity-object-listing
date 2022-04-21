@@ -117,11 +117,11 @@ const generateResume = () => {
 };
 
 // When the button is clicked, it executes the three functions
-resumeButton.addEventListener("click", () => {
-  scaleCv();
-  generateResume();
-  removeScale();
-});
+// resumeButton.addEventListener("click", () => {
+//   scaleCv();
+//   generateResume();
+//   removeScale();
+// });
 // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
 
 // 2. The PDF is generated
