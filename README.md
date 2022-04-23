@@ -11,5 +11,7 @@
   - [ ] github
     - [ ] review my README.md
   - [ ] e-mail
+  - [ ] synthwave playlist
+  - [ ] old school heavy metal playlist
   - [ ] the batphone
 - [ ] put the right information in the cv
