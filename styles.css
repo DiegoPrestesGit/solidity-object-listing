@@ -71,14 +71,16 @@ img {
 }
 
 .main-list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  list-style-type: none;
+  background-color: red;
 }
 
-.motorhead-logo {
-  /* CHANGE PNG COLOR */
-  filter: invert(48%) sepia(13%) saturate(0%) hue-rotate(130deg) brightness(95%) contrast(80%);
+.list-item {
+  text-align: center;
+  background-color: blue;
+  /* width: 80%; */
 }
