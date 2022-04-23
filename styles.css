@@ -37,6 +37,31 @@ html, body, #root {
   font-family: 'Poppins', sans-serif;
 }
 
+h1,h2,h3,ul,p {
+  margin: 0;
+}
+
+h1,h2,h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--h2-font-size);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -48,7 +73,12 @@ html, body, #root {
 .main-list {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   list-style-type: none;
+}
+
+.motorhead-logo {
+  /* CHANGE PNG COLOR */
+  filter: invert(48%) sepia(13%) saturate(0%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
