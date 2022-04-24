@@ -68,9 +68,14 @@ img {
   align-items: center;
   /* justify-content: center; */
   margin-top: 8rem;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+
 }
 
 .main-list {
+  height: 110%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -80,7 +85,13 @@ img {
 }
 
 .list-item {
+  padding: 9px;
+  margin: 8px 0 8px 0;
   text-align: center;
   background-color: blue;
-  /* width: 80%; */
+  width: 100%;
+}
+
+.list-item a {
+
 }
