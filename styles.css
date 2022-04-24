@@ -74,6 +74,12 @@ img {
 
 }
 
+.main-content {
+  height: 75%;
+  width: 75%;
+  background-color: white;
+}
+
 .main-list {
   height: 110%;
   width: 100%;
