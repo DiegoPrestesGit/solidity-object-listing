@@ -71,7 +71,12 @@ img {
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
+}
 
+.my-photo {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
 }
 
 .main-content {
@@ -80,10 +85,13 @@ img {
   background-color: white;
 }
 
-.main-list {
-  height: 110%;
-  width: 100%;
+#main-section {
+  /* min-height: ; */
+  height: 30rem;
+  max-height: 100%;
+  max-width: 968px;
   display: flex;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -95,9 +103,11 @@ img {
   margin: 8px 0 8px 0;
   text-align: center;
   background-color: blue;
+  border-radius: 5%;
   width: 100%;
 }
 
 .list-item a {
-
+  width: 100%;
+  height: 100%;
 }
