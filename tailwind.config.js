@@ -14,6 +14,10 @@ export default {
                 MonomaniacRegular: "Monomaniac-Regular",
                 MrDafoe: "MrDafoe",
             },
+            backgroundImage: {
+                waves: 'url("./src/assets/imgs/waves.svg")',
+                stars: 'url("./src/assets/imgs/stars.svg")',
+            },
         },
     },
     plugins: [],
